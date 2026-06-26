@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-night-900 text-snow-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .card-glow {
+    @apply bg-night-800 border border-night-600 rounded-xl transition-all duration-300 hover:border-crimson/50 hover:shadow-[0_0_24px_rgba(200,16,46,0.15)];
+  }
+  .tag {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-medium;
+  }
+}
